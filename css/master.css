@@ -1,0 +1,43 @@
+#nav-bar-logo {
+    width: 100%;
+    height: 90px;
+    display: inline-flex;
+    background-color: rgb(137, 217, 70);
+}
+#links {
+    position: relative;
+    left: 200px;
+    line-height: 90px;
+}
+#links * {
+    padding-left: 100px;
+    text-decoration: none;
+}
+#logo {
+    height: 90px;
+    width: auto;
+}
+.banner {
+    top: 0px;
+    width: auto;
+    height: 550px;
+    background-color: rgb(12, 13, 11);
+    background-image: url("../images/rsz_banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#createForm {
+    width: 100%;
+    height: 60%;
+    background-color: rgb(62, 177, 7);
+}
+
+.md-button.md-raised
+{
+  background: rgb(40, 111, 130);
+}
+
+md-card
+{
+  background: #F0F0F0;
+}

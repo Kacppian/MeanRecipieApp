@@ -1,0 +1,17 @@
+{
+  "name": "recipieapp",
+  "version": "1.0.0",
+  "description": "Store your recipies and cook?!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kaushik Asp",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.12",
+    "multer": "^1.1.0"
+  }
+}

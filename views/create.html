@@ -1,0 +1,23 @@
+<h1>Let's write them recipies down already!!! </h1>
+
+<md-input-container style="width:50%;">
+    <label>
+        <h3>Name</h3></label>
+    <input type="text" ng-model="recipieForm.name">
+</md-input-container>
+<br>
+<md-input-container style="width:50%;">
+    <label>
+        <h3>Method Of Preperation</h3></label>
+    <textarea ng-model="recipieForm.prep"></textarea>
+</md-input-container>
+<br>
+<input type="file" file-model="myFile" />
+<br>
+<br>
+<md-button class="md-primary md-raised" style="left:40%;top:50px;" ng-click="uploadFile()"> Save it will ya?!</md-button>
+
+{{recipieForm}}
+
+
+<img ng-src="{{recipieForm.image}}" alt="" />

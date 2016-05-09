@@ -1,0 +1,43 @@
+<div class="banner"></div>
+<!--
+<div ng-repeat="i in data" style="display:inline-block;">
+    {{i._id}}
+    <h3>{{i.name}}</h3>
+    <h5>{{i.recipie}}</h5>
+    <img height="200px" ng-src="{{i.image}}" alt="" />
+</div>
+
+<md-card-title>
+  <md-card-title-text>
+    <span class="md-headline">{{i.name}}</span>
+    <span class="md-subhead">{{i._id}}</span>
+  </md-card-title-text>
+</md-card-title>
+-->
+<div ng-repeat="i in data" style="display:inline-block;" class="md-raised">
+<md-card class="md-accent">
+  <md-card-header>
+    <md-card-header-text>
+      <span class="md-title">{{i.name}}</span>
+      <span class="md-subhead">{{i._id}}</span>
+    </md-card-header-text>
+  </md-card-header>
+  <img ng-src="{{i.image}}" class="md-card-image" style="height:200px;width:200px;" alt="image caption">
+  <md-card-actions layout="row" layout-align="start center">
+    <md-button class="md-raised">Show Me!</md-button>
+    <md-button class="md-raised">Delete</md-button>
+    <md-card-icon-actions>
+      <md-button class="md-icon-button" aria-label="icon">
+        <md-icon md-svg-icon="icon"></md-icon>
+      </md-button>
+    </md-card-icon-actions>
+  </md-card-actions>
+  <md-card-content>
+    <p>
+     {{i.recipie}}
+    </p>
+  </md-card-content>
+</md-card>
+</div>
+<!--<input type="filepicker" data-fp-apikey="AuUIzTlOhQOSe7Pbz45KXz"
+onchange="alert(event.fpfile.url)">-->

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app='recipieApp'>
+
+<head>
+    <meta charset="utf-8">
+    <title>My Recipies</title>
+    <link rel="stylesheet" href="../css/master.css" charset="utf-8">
+    <script src="../bower_components/angular/angular.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css">
+    <script src="../bower_components/angular-material/angular-material.js" charset="utf-8"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js" charset="utf-8"></script>
+    <script src="../bower_components/angular-aria/angular-aria.js" charset="utf-8"></script>
+    <script src="../bower_components/angular-route/angular-route.js" charset="utf-8"></script>
+    <script src="../bower_components/ng-file-upload/ng-file-upload.js" charset="utf-8"></script>
+    <script src="../js/index.js" charset="utf-8"></script>
+    <script src="../js/navCtrl.js" charset="utf-8"></script>
+    <script src="../js/createCtrl.js" charset="utf-8"></script>
+    <script src="../services/fileUpload.js" charset="utf-8"></script>
+    <script src="../directives/filemodel.js" charset="utf-8"></script>
+    <script src="../services/dataService.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+    <div id="nav-bar-logo" ng-controller="navCtrl">
+        <a href="#home"><img src="../images/logo.png" alt="" id="logo" /></a>
+        <div id="links">
+            <a href="#create">Create A Recipie</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#signup">Sign Up!</a>
+        </div>
+    </div>
+    <ng-view></ng-view>
+</body>
+
+</html>
